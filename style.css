@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+}
+h1{
+    text-align: left;
+   margin-top: 60px;
+   font-size: 20px;
+   margin-left:40px;
+}
+ul li{
+   text-align: center;
+   float: right;
+  list-style: none;
+   
+   
+   font-size: 10px;
+   margin-right: 20px;
+  
+
+}
+.middle-section{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.left{
+    width: 100%;
+    margin-left: 10px;
+    
+}
+.left h1{
+    font-size: 30px;
+}
+.left p{
+    font-size: 12px;
+    margin-left: 50px;
+    margin: 5px;
+}
+.fa-arrow-right-long{
+    color: white;
+    background-color: maroon;
+    border-radius: 5px;
+   
+}
+.right img{
+   border-radius: 2px solid gray;
+   width: 300px;
+   background-size: 100px;
+  
+}
+.logo-section img{
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 47px;
+
+    
+
+   
+  
+    
+}
+/**main section start here**/
+.p1{
+    text-align: center;
+    margin-top: 15px;
+}
+.fa-star{
+    color: goldenrod;
+    font-size: 9px;
+}
+.card img{
+    margin-top: 20px;
+    width: 200px;
+}
+.cardview{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    align-items: center;
+    margin-left: 35px;
+}
+.arrow{
+ float: right;
+ margin-top: 10px;
+ color: red;
+    
+}
+.finish h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+}
+
+.finish{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+    padding: 4px;
+    
+}
+
+@media screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .top-section ul li,.middle-section,.logo-section,.cardview,.card,.finish{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    
+}
+@media screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .top-section ul li,.middle-section,.logo-section,.cardview,.card,.finish{
+        grid-template-columns: repeat(3, 1fr);
+      
+    }   
+    
+}
+
+
